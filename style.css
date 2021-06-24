@@ -20,11 +20,16 @@ html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 30vh;
+  min-height: 18vh;
   align-items: center;
   justify-content: center;
 }
 
+.title {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 0.6rem black;
+}
 .key {
   border: 0.4rem solid black;
   border-radius: 0.5rem;
@@ -39,6 +44,7 @@ html {
   text-shadow: 0 0 0.8rem black;
 }
 
+/*Issue is in this class, as this class creates problem when adding using classList function */
 .playing {
   transform: scale(1.1);
   border-color: #ffc600;
@@ -55,4 +61,47 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   color: #ffc600;
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+}
+.footer-text {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+ul {
+  width: auto;
+  float: left;
+  margin-top: 0.5rem;
+}
+li {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+a {
+  text-align: center;
+  color: rgba(251, 6, 97, 1);
+  text-decoration: none;
+  font-weight: 800;
+  margin-right: 2rem;
+}
+a:hover {
+  color: rgba(179, 0, 255, 1);
+  transition: 0.5s ease-in-out;
+}
+.footer-conti {
+  border: 2px solid #ffc600;
+  padding: 0.5rem;
+  background-color: #ffc600;
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 0.9rem #ffc600;
+  margin-left: 20rem;
+}
+.footer-conti:hover {
+  box-shadow: none;
+  transition: 0.5s ease-in-out;
 }
